@@ -1,0 +1,1404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="AfterBuy AI - Intelligent purchase monitoring and decision assistant"
+    >
+
+    <title>AfterBuy AI | Smart Purchase Assistant</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     AUTHENTICATION
+========================================================= -->
+
+<section
+    id="authSection"
+    class="auth-page"
+>
+
+    <div class="auth-container">
+
+
+        <!-- LEFT SIDE -->
+
+        <div class="auth-showcase">
+
+            <div class="showcase-content">
+
+                <div class="brand">
+
+                    <div class="brand-logo">
+                        🤖
+                    </div>
+
+                    <span>
+                        AfterBuy AI
+                    </span>
+
+                </div>
+
+
+                <div class="showcase-main">
+
+                    <span class="showcase-badge">
+                        AI-POWERED PURCHASE ASSISTANT
+                    </span>
+
+
+                    <h1>
+                        Smarter decisions
+                        <br>
+                        <span>after you buy.</span>
+                    </h1>
+
+
+                    <p>
+                        AfterBuy AI monitors your purchases,
+                        return deadlines, warranties and price
+                        changes so you never miss an important
+                        opportunity.
+                    </p>
+
+
+                    <div class="feature-list">
+
+                        <div class="feature-item">
+
+                            <div class="feature-icon">
+                                💰
+                            </div>
+
+                            <div>
+                                <strong>
+                                    Track Price Drops
+                                </strong>
+
+                                <span>
+                                    Know when you could save money.
+                                </span>
+                            </div>
+
+                        </div>
+
+
+                        <div class="feature-item">
+
+                            <div class="feature-icon">
+                                🔄
+                            </div>
+
+                            <div>
+                                <strong>
+                                    Never Miss Returns
+                                </strong>
+
+                                <span>
+                                    Stay ahead of return deadlines.
+                                </span>
+                            </div>
+
+                        </div>
+
+
+                        <div class="feature-item">
+
+                            <div class="feature-icon">
+                                🛡️
+                            </div>
+
+                            <div>
+                                <strong>
+                                    Monitor Warranties
+                                </strong>
+
+                                <span>
+                                    Keep track of warranty periods.
+                                </span>
+                            </div>
+
+                        </div>
+
+
+                        <div class="feature-item">
+
+                            <div class="feature-icon">
+                                🤖
+                            </div>
+
+                            <div>
+                                <strong>
+                                    AI Recommendations
+                                </strong>
+
+                                <span>
+                                    Get intelligent actions for purchases.
+                                </span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="showcase-footer">
+
+                    <span>
+                        🔒 Secure account authentication
+                    </span>
+
+                    <span>
+                        •
+                    </span>
+
+                    <span>
+                        Built for smarter shopping
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- RIGHT SIDE -->
+
+        <div class="auth-panel">
+
+            <div class="auth-card">
+
+
+                <!-- =================================================
+                     REGISTER
+                ================================================== -->
+
+                <div
+                    id="registerPanel"
+                    class="auth-form-panel"
+                >
+
+                    <div class="auth-header">
+
+                        <span class="auth-label">
+                            GET STARTED
+                        </span>
+
+                        <h2>
+                            Create your account
+                        </h2>
+
+                        <p>
+                            Join AfterBuy AI and start
+                            managing your purchases smarter.
+                        </p>
+
+                    </div>
+
+
+                    <form
+                        id="registerForm"
+                        novalidate
+                    >
+
+
+                        <div class="input-group">
+
+                            <label for="authName">
+                                Full Name
+                            </label>
+
+                            <div class="input-wrapper">
+
+                                <span class="input-icon">
+                                    👤
+                                </span>
+
+                                <input
+                                    id="authName"
+                                    type="text"
+                                    placeholder="Enter your full name"
+                                    autocomplete="name"
+                                    required
+                                >
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="input-group">
+
+                            <label for="registerEmail">
+                                Email Address
+                            </label>
+
+                            <div class="input-wrapper">
+
+                                <span class="input-icon">
+                                    ✉️
+                                </span>
+
+                                <input
+                                    id="registerEmail"
+                                    type="email"
+                                    placeholder="you@example.com"
+                                    autocomplete="email"
+                                    required
+                                >
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="input-group">
+
+                            <label for="registerPassword">
+                                Password
+                            </label>
+
+                            <div class="input-wrapper">
+
+                                <span class="input-icon">
+                                    🔒
+                                </span>
+
+                                <input
+                                    id="registerPassword"
+                                    type="password"
+                                    placeholder="Create a password"
+                                    autocomplete="new-password"
+                                    minlength="6"
+                                    required
+                                >
+
+                                <button
+                                    type="button"
+                                    class="password-toggle"
+                                    onclick="togglePassword('registerPassword', this)"
+                                    aria-label="Show password"
+                                >
+                                    👁
+                                </button>
+
+                            </div>
+
+                            <small class="input-help">
+                                Use at least 6 characters.
+                            </small>
+
+                        </div>
+
+
+
+                        <div
+                            id="registerMessage"
+                            class="auth-message"
+                        ></div>
+
+
+
+                        <button
+                            id="registerButton"
+                            class="auth-submit"
+                            type="submit"
+                        >
+
+                            <span
+                                id="registerButtonText"
+                            >
+                                Create Account
+                            </span>
+
+                        </button>
+
+
+                    </form>
+
+
+
+                    <div class="auth-divider">
+
+                        <span>
+                            Already have an account?
+                        </span>
+
+                    </div>
+
+
+                    <button
+                        type="button"
+                        class="switch-button"
+                        onclick="showLogin()"
+                    >
+                        Sign in to your account
+                        <span>→</span>
+                    </button>
+
+
+                </div>
+
+
+
+                <!-- =================================================
+                     LOGIN
+                ================================================== -->
+
+                <div
+                    id="loginPanel"
+                    class="auth-form-panel"
+                    style="display:none;"
+                >
+
+                    <div class="auth-header">
+
+                        <span class="auth-label">
+                            WELCOME BACK
+                        </span>
+
+                        <h2>
+                            Sign in to your account
+                        </h2>
+
+                        <p>
+                            Continue managing your purchases
+                            with AfterBuy AI.
+                        </p>
+
+                    </div>
+
+
+
+                    <form
+                        id="loginForm"
+                        novalidate
+                    >
+
+
+                        <div class="input-group">
+
+                            <label for="loginEmail">
+                                Email Address
+                            </label>
+
+                            <div class="input-wrapper">
+
+                                <span class="input-icon">
+                                    ✉️
+                                </span>
+
+                                <input
+                                    id="loginEmail"
+                                    type="email"
+                                    placeholder="you@example.com"
+                                    autocomplete="email"
+                                    required
+                                >
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="input-group">
+
+                            <label for="loginPassword">
+                                Password
+                            </label>
+
+                            <div class="input-wrapper">
+
+                                <span class="input-icon">
+                                    🔒
+                                </span>
+
+                                <input
+                                    id="loginPassword"
+                                    type="password"
+                                    placeholder="Enter your password"
+                                    autocomplete="current-password"
+                                    required
+                                >
+
+                                <button
+                                    type="button"
+                                    class="password-toggle"
+                                    onclick="togglePassword('loginPassword', this)"
+                                    aria-label="Show password"
+                                >
+                                    👁
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div
+                            id="loginMessage"
+                            class="auth-message"
+                        ></div>
+
+
+
+                        <button
+                            id="loginButton"
+                            class="auth-submit"
+                            type="submit"
+                        >
+
+                            <span
+                                id="loginButtonText"
+                            >
+                                Sign In
+                            </span>
+
+                        </button>
+
+
+                    </form>
+
+
+
+                    <div class="auth-divider">
+
+                        <span>
+                            Don't have an account?
+                        </span>
+
+                    </div>
+
+
+                    <button
+                        type="button"
+                        class="switch-button"
+                        onclick="showRegister()"
+                    >
+                        Create a new account
+                        <span>→</span>
+                    </button>
+
+
+                </div>
+
+
+            </div>
+
+
+            <p class="mobile-brand">
+                © 2026 AfterBuy AI
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     MAIN APPLICATION
+========================================================= -->
+
+<section
+    id="appSection"
+    style="display:none;"
+>
+
+
+    <!-- HEADER -->
+
+    <header class="header">
+
+        <div class="header-inner">
+
+            <div>
+
+                <div class="brand-row">
+
+                    <span class="brand-icon">
+                        🤖
+                    </span>
+
+                    <h1>
+                        AfterBuy AI
+                    </h1>
+
+                </div>
+
+                <p>
+                    Your AI agent after the purchase
+                </p>
+
+            </div>
+
+
+            <div class="header-actions">
+
+                <div class="header-status">
+
+                    <span class="status-dot"></span>
+
+                    Monitoring Purchases
+
+                </div>
+
+
+                <button
+                    class="logout-btn"
+                    onclick="logoutUser()"
+                    type="button"
+                >
+                    Logout
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <main class="container">
+
+
+        <!-- HERO -->
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <span class="eyebrow">
+                    🤖 SMART PURCHASE ASSISTANT
+                </span>
+
+                <h2>
+                    Welcome to AfterBuy AI 👋
+                </h2>
+
+                <p>
+                    Your AI assistant monitors your purchases
+                    and helps you make better decisions after buying.
+                </p>
+
+
+                <div class="hero-buttons">
+
+                    <button
+                        class="primary-btn"
+                        type="button"
+                        onclick="showPurchaseForm()"
+                    >
+                        ➕ Add Purchase
+                    </button>
+
+
+                    <button
+                        class="secondary-btn"
+                        type="button"
+                        onclick="scrollToPurchases()"
+                    >
+                        View Purchases
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="hero-visual">
+
+                <div class="monitor-card">
+
+                    <div class="monitor-icon">
+                        🛍️
+                    </div>
+
+                    <strong>
+                        Smart Monitoring
+                    </strong>
+
+                    <span>
+                        Price • Returns • Warranty
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- PURCHASE FORM -->
+
+        <section
+            id="purchaseForm"
+            class="panel purchase-form"
+            style="display:none;"
+        >
+
+            <div class="panel-header">
+
+                <div>
+
+                    <span class="section-label">
+                        PURCHASE
+                    </span>
+
+                    <h2 id="formTitle">
+                        Add Purchase
+                    </h2>
+
+                </div>
+
+
+                <button
+                    class="icon-btn"
+                    onclick="hidePurchaseForm()"
+                    type="button"
+                >
+                    ✕
+                </button>
+
+            </div>
+
+
+            <input
+                type="hidden"
+                id="editingPurchaseId"
+            >
+
+
+            <div class="form-grid">
+
+                <div class="form-group">
+
+                    <label for="productName">
+                        Product Name
+                    </label>
+
+                    <input
+                        id="productName"
+                        type="text"
+                        placeholder="Example: Sony Headphones"
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="purchasePrice">
+                        Purchase Price (₹)
+                    </label>
+
+                    <input
+                        id="purchasePrice"
+                        type="number"
+                        min="1"
+                        step="0.01"
+                        placeholder="8499"
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="purchaseDate">
+                        Purchase Date
+                    </label>
+
+                    <input
+                        id="purchaseDate"
+                        type="date"
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="returnPeriod">
+                        Return Period (days)
+                    </label>
+
+                    <input
+                        id="returnPeriod"
+                        type="number"
+                        min="1"
+                        placeholder="15"
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="warranty">
+                        Warranty (months)
+                    </label>
+
+                    <input
+                        id="warranty"
+                        type="number"
+                        min="1"
+                        placeholder="3"
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="currentPrice">
+                        Current Price (₹)
+                    </label>
+
+                    <input
+                        id="currentPrice"
+                        type="number"
+                        min="1"
+                        step="0.01"
+                        placeholder="7499"
+                    >
+
+                </div>
+
+            </div>
+
+
+            <div class="form-note">
+                💡 Current price can be updated later.
+                Every updated price is stored in Price History.
+            </div>
+
+
+            <div class="form-buttons">
+
+                <button
+                    class="primary-btn"
+                    onclick="savePurchase()"
+                    type="button"
+                >
+                    💾
+                    <span id="saveButtonText">
+                        Save Purchase
+                    </span>
+                </button>
+
+
+                <button
+                    class="secondary-btn"
+                    onclick="hidePurchaseForm()"
+                    type="button"
+                >
+                    Cancel
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ALERTS -->
+
+        <section class="panel alerts-section">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <span class="section-label">
+                        SMART MONITORING
+                    </span>
+
+                    <h2>
+                        Alerts & Actions 🔔
+                    </h2>
+
+                </div>
+
+
+                <span
+                    id="alertCount"
+                    class="alert-count"
+                >
+                    0
+                </span>
+
+            </div>
+
+
+            <div
+                id="alertsList"
+                class="alerts-list"
+            ></div>
+
+        </section>
+
+
+
+        <!-- DASHBOARD -->
+
+        <section class="dashboard-section">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <span class="section-label">
+                        OVERVIEW
+                    </span>
+
+                    <h2>
+                        Purchase Overview
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="stats">
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon">
+                        🛍️
+                    </div>
+
+                    <span>
+                        Total Purchases
+                    </span>
+
+                    <strong id="totalPurchases">
+                        0
+                    </strong>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon">
+                        💰
+                    </div>
+
+                    <span>
+                        Potential Savings
+                    </span>
+
+                    <strong id="totalSavings">
+                        ₹0
+                    </strong>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon">
+                        🔄
+                    </div>
+
+                    <span>
+                        Returns Ending Soon
+                    </span>
+
+                    <strong id="returnsSoon">
+                        0
+                    </strong>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon">
+                        🛡️
+                    </div>
+
+                    <span>
+                        Warranties Ending Soon
+                    </span>
+
+                    <strong id="warrantiesSoon">
+                        0
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="dashboard-insights">
+
+
+                <div class="insight-card">
+
+                    <span>
+                        Average Purchase Price
+                    </span>
+
+                    <strong id="averagePrice">
+                        ₹0
+                    </strong>
+
+                </div>
+
+
+                <div class="insight-card">
+
+                    <span>
+                        Price Drops
+                    </span>
+
+                    <strong id="priceDropCount">
+                        0
+                    </strong>
+
+                </div>
+
+
+                <div class="insight-card">
+
+                    <span>
+                        Active Returns
+                    </span>
+
+                    <strong id="activeReturns">
+                        0
+                    </strong>
+
+                </div>
+
+
+                <div class="insight-card">
+
+                    <span>
+                        Active Warranties
+                    </span>
+
+                    <strong id="activeWarranties">
+                        0
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- PURCHASES -->
+
+        <section
+            id="purchasesSection"
+            class="purchases-section"
+        >
+
+            <div class="section-heading">
+
+                <div>
+
+                    <span class="section-label">
+                        YOUR DATA
+                    </span>
+
+                    <h2>
+                        Your Purchases
+                    </h2>
+
+                </div>
+
+
+                <span
+                    id="purchaseCountLabel"
+                    class="purchase-count"
+                >
+                    0 purchases
+                </span>
+
+            </div>
+
+
+            <div class="toolbar">
+
+                <div class="search-box">
+
+                    <span>
+                        🔍
+                    </span>
+
+                    <input
+                        id="searchInput"
+                        type="search"
+                        placeholder="Search purchases..."
+                        oninput="displayPurchases()"
+                    >
+
+                </div>
+
+
+                <select
+                    id="filterSelect"
+                    onchange="displayPurchases()"
+                >
+
+                    <option value="all">
+                        All Purchases
+                    </option>
+
+                    <option value="priceDrop">
+                        💰 Price Drops
+                    </option>
+
+                    <option value="returnActive">
+                        🔄 Return Active
+                    </option>
+
+                    <option value="returnSoon">
+                        ⚠️ Return Ending Soon
+                    </option>
+
+                    <option value="warrantyActive">
+                        🛡️ Warranty Active
+                    </option>
+
+                    <option value="warrantySoon">
+                        ⏰ Warranty Ending Soon
+                    </option>
+
+                </select>
+
+
+                <select
+                    id="sortSelect"
+                    onchange="displayPurchases()"
+                >
+
+                    <option value="newest">
+                        Newest First
+                    </option>
+
+                    <option value="oldest">
+                        Oldest First
+                    </option>
+
+                    <option value="priceHigh">
+                        Purchase Price: High → Low
+                    </option>
+
+                    <option value="priceLow">
+                        Purchase Price: Low → High
+                    </option>
+
+                    <option value="savingsHigh">
+                        Savings: High → Low
+                    </option>
+
+                    <option value="returnSoonest">
+                        Return Deadline Soonest
+                    </option>
+
+                    <option value="warrantySoonest">
+                        Warranty Deadline Soonest
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div
+                id="purchaseList"
+                class="purchase-list"
+            ></div>
+
+        </section>
+
+
+
+        <!-- DATA -->
+
+        <section class="panel data-management">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <span class="section-label">
+                        DATA MANAGEMENT
+                    </span>
+
+                    <h2>
+                        Your Purchase Data
+                    </h2>
+
+                    <p>
+                        Export or import your purchase data.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="data-buttons">
+
+                <button
+                    class="secondary-btn"
+                    onclick="exportData()"
+                    type="button"
+                >
+                    📤 Export Data
+                </button>
+
+
+                <button
+                    class="secondary-btn"
+                    onclick="document.getElementById('importFile').click()"
+                    type="button"
+                >
+                    📥 Import Data
+                </button>
+
+
+                <input
+                    id="importFile"
+                    type="file"
+                    accept=".json,application/json"
+                    style="display:none;"
+                    onchange="importData(event)"
+                >
+
+            </div>
+
+        </section>
+
+
+
+        <!-- NOTIFICATIONS -->
+
+        <section class="panel notifications-panel">
+
+            <div class="notification-content">
+
+                <div class="notification-icon">
+                    🔔
+                </div>
+
+                <div>
+
+                    <span class="section-label">
+                        BROWSER NOTIFICATIONS
+                    </span>
+
+                    <h2>
+                        Stay Updated
+                    </h2>
+
+                    <p>
+                        Enable notifications to receive important
+                        purchase reminders and price alerts.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="notification-actions">
+
+                <span
+                    id="notificationStatus"
+                    class="notification-status"
+                >
+                    Notifications not enabled
+                </span>
+
+
+                <button
+                    id="notificationButton"
+                    class="primary-btn"
+                    onclick="enableNotifications()"
+                    type="button"
+                >
+                    Enable Notifications
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- PRICE HISTORY -->
+
+        <div
+            id="historyModal"
+            class="modal-overlay"
+            style="display:none;"
+            onclick="closeHistoryOutside(event)"
+        >
+
+            <div class="modal">
+
+                <div class="modal-header">
+
+                    <div>
+
+                        <span class="section-label">
+                            PRICE MONITORING
+                        </span>
+
+                        <h2 id="historyTitle">
+                            Price History
+                        </h2>
+
+                    </div>
+
+
+                    <button
+                        class="icon-btn"
+                        onclick="closeHistoryModal()"
+                        type="button"
+                    >
+                        ✕
+                    </button>
+
+                </div>
+
+
+                <div
+                    id="historySummary"
+                    class="history-summary"
+                ></div>
+
+
+                <div class="chart-container">
+
+                    <canvas
+                        id="priceChart"
+                        width="800"
+                        height="350"
+                    ></canvas>
+
+                </div>
+
+
+                <div
+                    id="historyTable"
+                    class="history-table"
+                ></div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- AI -->
+
+        <div
+            id="aiModal"
+            class="modal-overlay"
+            style="display:none;"
+            onclick="closeAIModalOutside(event)"
+        >
+
+            <div class="modal ai-modal">
+
+                <div class="modal-header">
+
+                    <div>
+
+                        <span class="section-label">
+                            AFTERBUY AI
+                        </span>
+
+                        <h2>
+                            AI Decision Engine
+                        </h2>
+
+                    </div>
+
+
+                    <button
+                        class="icon-btn"
+                        onclick="closeAIModal()"
+                        type="button"
+                    >
+                        ✕
+                    </button>
+
+                </div>
+
+
+                <div
+                    id="aiContent"
+                    class="ai-content"
+                ></div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+
+    <footer>
+
+        <p>
+            AfterBuy AI — Make smarter decisions after buying.
+        </p>
+
+        <small>
+            Your purchase data is protected by your account.
+        </small>
+
+    </footer>
+
+</section>
+
+
+<script src="app.js"></script>
+
+</body>
+</html>
